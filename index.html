@@ -1040,16 +1040,15 @@ POST /api/webhooks/rdcrm</div>
   </div>
 
   <script>
-    window.__TM_APP_CONFIG__ = Object.assign({
-      appName: 'Plataforma Operacional do TM',
-      provider: 'mock',
-      apiBaseUrl: '/api',
-      rdcrmConnectUrl: '/api/auth/rdcrm/connect',
-      rdcrmSyncUrl: '/api/rdcrm/sync',
-      aiEndpoint: '/api/ai/tm-assistant',
-      webhookEnabled: false,
-      oauthHandledByBackend: true,
-      periodLabel: 'mês atual'
+    window.__TM_APP_CONFIG__ = {
+    provider: 'api',
+    apiBaseUrl: 'https://tmoperationsplatform.onrender.com/api',
+    rdcrmConnectUrl: 'https://tmoperationsplatform.onrender.com/api/auth/rdcrm/connect',
+    rdcrmSyncUrl: 'https://tmoperationsplatform.onrender.com/api/rdcrm/sync',
+    aiEndpoint: 'https://tmoperationsplatform.onrender.com/api/ai/tm-assistant',
+    oauthHandledByBackend: true,
+    webhookEnabled: true,
+    periodLabel: 'mês atual'
     }, window.__TM_APP_CONFIG__ || {});
 
     const state = {
